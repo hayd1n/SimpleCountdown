@@ -1,0 +1,99 @@
+* {
+    cursor: none;
+}
+
+*:not(input) {
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.bg-image {
+    background-image: url("/src/images/background.jpg");
+
+    filter: blur(8px) brightness(60%);
+    -webkit-filter: blur(8px) brightness(60%);
+
+    height: 110%;
+    width: 110%;
+    margin-top: -5%;
+    margin-left: -5%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clock-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin-top: 5vh;
+    margin-right: 5vw;
+}
+
+.clock-text {
+    color: white;
+    font-size: 3vh;
+}
+
+.countdown-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 10px;
+
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));    
+}
+
+.countdown-title {
+    font-size: 3vh;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+
+    color: lightgray;
+    line-height: 78%;
+
+    opacity: 0.8;
+
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+
+    display: inline-block;
+}
+
+.countdown-days {
+    font-size: 30vh;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+    color: lightgray;
+    line-height: 78%;
+
+    opacity: 0.8;
+
+    margin-left: 40px;
+
+    display: inline-block;
+}
+
+.countdown-days-small {
+    font-size: 30%;
+    line-height: 78%;
+}
