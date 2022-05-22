@@ -11,7 +11,7 @@ const countdown_update = () => {
     let distance = countdown_date - now;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let days_small = (distance / (1000 * 60 * 60 * 24)) - days;
-    days_small = Math.floor(days_small.toFixed(7) * 10000000);
+    days_small = days_small.toFixed(7).toString().substring(2);
 
     $('#countdown_days').text(days);
     $('#countdown_days_small').text(days_small);

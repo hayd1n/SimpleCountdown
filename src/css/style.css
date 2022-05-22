@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('../fonts/Noto_Sans_TC/NotoSansTC-Regular.otf');
+}
+
 * {
     cursor: none;
 }
@@ -17,7 +22,7 @@ body {
 }
 
 .bg-image {
-    background-image: url("/src/images/background.jpg");
+    background-image: url('../images/background.jpg');
 
     filter: blur(8px) brightness(60%);
     -webkit-filter: blur(8px) brightness(60%);
@@ -44,6 +49,7 @@ body {
 .clock-text {
     color: white;
     font-size: 3vh;
+    font-family: 'NotoSans-Regular', 'Microsoft JhengHei';
 }
 
 .countdown-container {
